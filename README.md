@@ -23,6 +23,7 @@ A tela deverá conter as seguintes funcionalidades:
 * Não utilizar nenhum serviço, todos os dados deverão ser obtidos através da API do Itunes
 * Testes são um diferencial
 * É permitida a utilização de um framework de sua escolha (não obrigatório)
+* O repositório deverá conter um arquivo chamado `steps.md` descrevendo como executar o projeto
 
 ## Critérios de Avaliação
 
