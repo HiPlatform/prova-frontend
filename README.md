@@ -21,9 +21,13 @@ A tela deverá conter as seguintes funcionalidades:
 - ES6+
 ---
 * Não utilizar nenhum serviço, todos os dados deverão ser obtidos através da API do Itunes
-* Testes são um diferencial
 * É permitida a utilização de um framework de sua escolha (não obrigatório)
 * O repositório deverá conter um arquivo chamado `steps.md` descrevendo como executar o projeto
+
+### Diferenciais:
+
+* Testes automatizados
+* Utilização e configuração de algum module bundler ou automatizador de tarefas (Gulp, Grunt, Webpack e etc)
 
 ## Critérios de Avaliação
 
