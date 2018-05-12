@@ -1,0 +1,21 @@
+---
+parserOptions:
+  sourceType: module
+
+env:
+  amd: true
+  browser: true
+  es6: true
+  jquery: true
+  node: true
+  jest: true
+
+extends:
+ - airbnb
+
+parser: babel-eslint
+
+rules:
+  import/extensions:
+    - off
+    - never
