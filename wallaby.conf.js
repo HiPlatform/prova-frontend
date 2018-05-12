@@ -41,6 +41,10 @@ module.exports = (wallaby) => {
       const jestConfig = {
         setupFiles: ['<rootDir>/src/setupTests.js'],
         testPathIgnorePatterns: ['<rootDir>/node_modules/'],
+        moduleNameMapper: {
+          '^.+\\.(jpg|jpeg|png|gif|svg)$': require.resolve('react-scripts/config/jest/fileTransform.js'),
+          '^.+\\.css$': require.resolve('react-scripts/config/jest/cssTransform.js'),
+        },
       };
       conf.testFramework.configure(jestConfig);
     },
