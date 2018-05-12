@@ -4,7 +4,9 @@ exports[`Home Page should render without crashing 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__unrendered__): <Unknown
+    label=""
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,9 +19,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h1>
-        Hello, World!
-</h1>,
+      "children": <h1 />,
     },
     "ref": null,
     "rendered": Object {
@@ -27,10 +27,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Hello, World!",
+        "children": "",
       },
       "ref": null,
-      "rendered": "Hello, World!",
+      "rendered": "",
       "type": "h1",
     },
     "type": "div",
@@ -41,9 +41,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <h1>
-          Hello, World!
-</h1>,
+        "children": <h1 />,
       },
       "ref": null,
       "rendered": Object {
@@ -51,10 +49,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Hello, World!",
+          "children": "",
         },
         "ref": null,
-        "rendered": "Hello, World!",
+        "rendered": "",
         "type": "h1",
       },
       "type": "div",
