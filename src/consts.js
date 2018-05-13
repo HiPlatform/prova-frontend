@@ -4,7 +4,7 @@ export const URLS = {
 
 export const CREDENTIALS = {
   headers: {
-    Authorization: 'Bearer BQCHcd8ZIIyCvIC6K63pmte9Y1qPJflUf8hCDEbKru2FQcC6alShA4owlZ9j92cBZpXnLB97xwoFGGBlZOY',
+    Authorization: 'Bearer BQDGGAag6Hocue0iXDFWp0O9CdmjCSq6nI9R2-HE-_N-skmHG8V3btyKOZnilxWjn7cpkFMAbM70G8CH_-Y',
   },
 };
 
@@ -13,4 +13,5 @@ export const HOMEPAGE_ACTIONS = {
   SEARCH_TYPE: 'SEARCH_TYPE',
   SEARCH_CHANGE: 'SEARCH_CHANGE',
   SEARCH_DETAILS: 'SEARCH_DETAILS',
+  NAVIGATE: 'NAVIGATE',
 };

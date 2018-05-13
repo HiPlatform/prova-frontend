@@ -1,0 +1,29 @@
+.trackCard {
+  display: flex;
+  flex-direction: row;
+  margin: 6px 4px;
+  align-items: stretch;
+  border: 1px solid #d9dadb;
+  border-radius: 5px;
+  box-shadow: 0px 1px 0px 0px #d9dadb;
+  flex-grow: 1; }
+  .trackCard > img {
+    width: 80px !important;
+    height: 120px; }
+  .trackCard__info {
+    width: 100%;
+    margin-left: 6px;
+    display: flex;
+    flex-direction: column; }
+    .trackCard__info__title > .attributeField, .trackCard__info__extra > .attributeField {
+      margin: 4px 0;
+      padding-right: 4px;
+      flex: 1 auto; }
+    .trackCard__info__title {
+      font-size: 13px;
+      font-weight: bold; }
+    .trackCard__info__extra {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      font-size: 11px; }

@@ -7,11 +7,12 @@ const initialState = {
   items: [],
   searchType: 'artist',
   value: '',
+  page: 'home',
 };
 
 const getData = state => ({ data }) => {
   const items = pathOr([], [`${state.searchType}s`, 'items'], data);
-  return { ...state, items };
+  return { ...state, items, page: 'search' };
 };
 
 const reducer = state => cond([
@@ -19,6 +20,7 @@ const reducer = state => cond([
   [propEq('type', HOMEPAGE_ACTIONS.SEARCH_TYPE), ({ searchType }) => ({ ...state, searchType })],
   [propEq('type', HOMEPAGE_ACTIONS.SEARCH_CHANGE), ({ value }) => ({ ...state, value })],
   [propEq('type', HOMEPAGE_ACTIONS.SEARCH_DETAILS), ({ details }) => ({ ...state, details })],
+  [propEq('type', HOMEPAGE_ACTIONS.NAVIGATE), ({ page }) => ({ ...state, page })],
   [T, () => state],
 ]);
 

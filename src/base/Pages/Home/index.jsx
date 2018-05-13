@@ -2,89 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { cond, pathOr, propEq, T, gte, partialRight } from 'ramda';
+import { cond, propEq, T } from 'ramda';
 
-import { changeType, changeInput, searchData, getDetails } from './Home.actions';
+import { changeType, changeInput, searchData, getDetails, changePage } from './Home.actions';
+import Topbar from '../../Organisms/Topbar';
+import ArtistCard from '../../Organisms/ArtistCard';
+import AlbumCard from '../../Organisms/AlbumCard';
+import TrackCard from '../../Organisms/TrackCard';
+import HomeForm from '../../Templates/HomeForm';
 import './Home.css';
 
-const ButtonGroup = ({ types, change }) => (
-  <div>
-    {types.map(type => (
-      <button
-        key={type}
-        onClick={() => change(type)}
-      >
-        {type}
-      </button>
-    ))}
-  </div>
-);
-
-const conditionRange = parameters =>
-  cond(parameters.map(parameter => [
-    parameter.value === 'D' ? T : partialRight(gte, [parameter.value]),
-    () => parameter.label,
-  ]));
-
-const popularityRanges = [
-  { value: 80, label: 'Hot' },
-  { value: 60, label: 'Cool' },
-  { value: 30, label: 'Regular' },
-  { value: 'D', label: 'Underground' },
-];
-
-const checkPopularity = conditionRange(popularityRanges);
-
-const ArtistList = ({ name, popularity, genres, images, href, details }) => (
-  <div onClick={() => details(`${href}/albums?limit=5`)}>
-    <p>{name}</p>
-    <p>{popularity} - {checkPopularity(popularity)}</p>
-    <p>{genres.join(', ')}</p>
-    <img src={pathOr('http://via.placeholder.com/200x100', ['0', 'url'], images)} alt="artist" />
-  </div>
-);
-
-const checkArtists = items =>
-  items.length > 1
-    ? 'Various artists'
-    : pathOr('', ['0', 'name'], items);
-
-const checkAvailable = (country, markets) =>
-  (markets.indexOf(country) === -1
-    ? 'Unavailable in your country'
-    : 'Available in your country');
-
-const AlbumList = ({ name, artists, images, available_markets, href, details }) => (
-  <div onClick={() => details(`${href}/tracks`)}>
-    <p>{name}</p>
-    <p>{checkArtists(artists)}</p>
-    <img src={pathOr('http://via.placeholder.com/200x100', ['0', 'url'], images)} alt="album" />
-    <p>{checkAvailable('BR', available_markets)}</p>
-  </div>
-);
-
-const getArtistsName = items =>
-  items.map(item => item.name);
-
-const getDuration = (ms) => {
-  const date = new Date(1000 * Math.round(ms / 1000));
-  return `${date.getUTCMinutes()}:${date.getUTCSeconds()}`;
-};
-
-const TrackList = ({ name, artists, album, duration_ms }) => (
-  <div>
-    <p>{name}</p>
-    <p>{getArtistsName(artists).join(', ')}</p>
-    <img src={pathOr('http://via.placeholder.com/200x100', ['images', '0', 'url'], album)} alt="album" />
-    <p>{album.name}</p>
-    <p>{getDuration(duration_ms)}</p>
-  </div>
-);
-
 const TypeSelect = cond([
-  [propEq('type', 'artist'), props => <ArtistList {...props} />],
-  [propEq('type', 'album'), props => <AlbumList {...props} />],
-  [propEq('type', 'track'), props => <TrackList {...props} />],
+  [propEq('type', 'artist'), props => <ArtistCard {...props} />],
+  [propEq('type', 'album'), props => <AlbumCard {...props} />],
+  [propEq('type', 'track'), props => <TrackCard {...props} />],
   [T, () => null],
 ]);
 
@@ -93,25 +24,36 @@ export const Home = ({
   value,
   searchType,
   items,
+  page,
   fnType,
   fnInput,
   fnSearch,
   fnDetails,
+  fnNavigate,
 }) => (
-  <div>
-    <h1>{label}</h1>
-    <ButtonGroup types={['artist', 'album', 'track']} change={fnType} />
-    <input type="text" defaultValue={value} onChange={fnInput} />
-    <button onClick={() => fnSearch(searchType, value)}>Search</button>
-    {items.map(item => (
-      <TypeSelect
-        key={item.id}
-        type={searchType}
-        details={fnDetails}
-        {...item}
-      />
-    ))}
-  </div>
+  page === 'home'
+    ? <HomeForm
+        value={value}
+        searchType={searchType}
+        fnType={fnType}
+        fnInput={fnInput}
+        fnSearch={fnSearch}
+    />
+    : (
+      <div>
+        <Topbar navigate={fnNavigate} />
+        <div style={{ display: 'flex', flexFlow: 'row wrap', marginTop: 50, overflowX: 'hidden' }}>
+          {items.map(item => (
+            <TypeSelect
+              key={item.id}
+              type={searchType}
+              details={fnDetails}
+              {...item}
+            />
+          ))}
+        </div>
+      </div>
+    )
 );
 
 Home.defaultProps = {
@@ -127,6 +69,7 @@ const mapState2ToProps = state => ({
   value: state.home.value,
   searchType: state.home.searchType,
   items: state.home.items,
+  page: state.home.page,
 });
 
 const mapDispatch2Props = dispatch =>
@@ -135,6 +78,7 @@ const mapDispatch2Props = dispatch =>
     fnInput: changeInput,
     fnSearch: searchData,
     fnDetails: getDetails,
+    fnNavigate: changePage,
   }, dispatch);
 
 export default connect(mapState2ToProps, mapDispatch2Props)(Home);

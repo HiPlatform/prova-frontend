@@ -19,3 +19,6 @@ export const changeType = searchType =>
 
 export const changeInput = ({ target: { value } }) =>
   ({ type: HOMEPAGE_ACTIONS.SEARCH_CHANGE, value });
+
+export const changePage = page =>
+  ({ type: HOMEPAGE_ACTIONS.NAVIGATE, page });
