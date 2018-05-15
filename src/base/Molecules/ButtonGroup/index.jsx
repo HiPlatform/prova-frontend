@@ -1,9 +1,12 @@
 import React from 'react';
 
-const ButtonGroup = ({ types, change }) => (
-  <div>
+import './ButtonGroup.css';
+
+const ButtonGroup = ({ types, change, active }) => (
+  <div className="buttonGroup">
     {types.map(type => (
       <button
+        className={`buttonGroup__button ${active === type ? 'active' : ''}`}
         key={type}
         onClick={() => change(type)}
       >

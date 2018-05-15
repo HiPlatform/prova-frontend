@@ -4,7 +4,7 @@ export const URLS = {
 
 export const CREDENTIALS = {
   headers: {
-    Authorization: 'Bearer BQDGGAag6Hocue0iXDFWp0O9CdmjCSq6nI9R2-HE-_N-skmHG8V3btyKOZnilxWjn7cpkFMAbM70G8CH_-Y',
+    Authorization: 'Bearer BQBx3V30_sdIrF-poghbHyRAwxqDWngoYXPEscIf04xcABSkreY78-3gTKTbe1tLb353S6bXMCY-8jfCh7A',
   },
 };
 

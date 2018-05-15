@@ -1,0 +1,37 @@
+.homeForm {
+  display: block;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin: 40px 16px 40px 0px;
+  width: 90%;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+  position: relative;
+  padding: 10px 15px;
+  float: left;
+
+  & > input {
+    margin: 10px 0px;
+  }
+
+  @media screen and (min-width: 341px) {
+    display: flex;
+    flex-direction: row;
+
+    & > .buttonGroup {
+      flex: 3;
+    }
+
+    & > input {
+      flex: 3;
+      margin: 0px 15px;
+    }
+
+    & > .uiButton {
+      flex: 1;
+    }
+  }
+}
+
+.logo {
+  text-align: center;
+}

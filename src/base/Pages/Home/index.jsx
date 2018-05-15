@@ -31,14 +31,19 @@ export const Home = ({
   fnDetails,
   fnNavigate,
 }) => (
-  page === 'home'
-    ? <HomeForm
-        value={value}
-        searchType={searchType}
-        fnType={fnType}
-        fnInput={fnInput}
-        fnSearch={fnSearch}
-    />
+  <div>
+    {page === 'home'
+    ? (
+      <div className="homePage">
+        <HomeForm
+          value={value}
+          searchType={searchType}
+          fnType={fnType}
+          fnInput={fnInput}
+          fnSearch={fnSearch}
+        />
+      </div>
+    )
     : (
       <div>
         <Topbar navigate={fnNavigate} />
@@ -53,7 +58,8 @@ export const Home = ({
           ))}
         </div>
       </div>
-    )
+    )}
+  </div>
 );
 
 Home.defaultProps = {

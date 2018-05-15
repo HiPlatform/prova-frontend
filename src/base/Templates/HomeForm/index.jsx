@@ -1,12 +1,19 @@
 import React from 'react';
 
+import Button from '../../Atoms/Button';
+import Input from '../../Atoms/Input';
 import ButtonGroup from '../../Molecules/ButtonGroup';
+
+import './HomeForm.css';
 
 const HomeForm = ({ value, searchType, fnType, fnInput, fnSearch }) => (
   <div>
-    <ButtonGroup types={['artist', 'album', 'track']} change={fnType} />
-    <input type="text" defaultValue={value} onChange={fnInput} />
-    <button onClick={() => fnSearch(searchType, value)}>Search</button>
+    <h1 className="logo">Music Tracker</h1>
+    <div className="homeForm">
+      <ButtonGroup types={['artist', 'album', 'track']} change={fnType} active={searchType} />
+      <Input type="text" value={value} onChange={fnInput} />
+      <Button onClick={() => fnSearch(searchType, value)} modifier="solid">SEARCH</Button>
+    </div>
   </div>
 );
 

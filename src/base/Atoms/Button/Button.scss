@@ -1,6 +1,5 @@
 .uiButton {
-  -moz-appearance: none;
-  -webkit-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 0;
   text-align: left;
@@ -14,4 +13,13 @@
   text-decoration: none;
   width: 90%;
   padding: 2px 0px;
+
+  &.solid {
+    background-color: #9658f4;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    width: 100%;
+  }
 }
