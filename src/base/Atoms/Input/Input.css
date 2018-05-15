@@ -1,0 +1,14 @@
+input {
+  width: 100%;
+  height: 35px;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative;
+  appearance: none;
+  padding: 0px 10px;
+  margin: 0px;
+  z-index: 1; }
