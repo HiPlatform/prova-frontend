@@ -10,7 +10,7 @@
   float: left; }
   .homeForm > input {
     margin: 10px 0px; }
-  @media screen and (min-width: 341px) {
+  @media screen and (min-width: 768px) {
     .homeForm {
       display: flex;
       flex-direction: row; }
