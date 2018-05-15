@@ -2,11 +2,11 @@ export const URLS = {
   SEARCH: 'https://api.spotify.com/v1/search',
 };
 
-export const CREDENTIALS = {
+export const CREDENTIALS = token => ({
   headers: {
-    Authorization: 'Bearer BQBx3V30_sdIrF-poghbHyRAwxqDWngoYXPEscIf04xcABSkreY78-3gTKTbe1tLb353S6bXMCY-8jfCh7A',
+    Authorization: `Bearer ${token}`,
   },
-};
+});
 
 export const HOMEPAGE_ACTIONS = {
   SEARCH_DATA: 'SEARCH_DATA',

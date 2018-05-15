@@ -1,18 +1,29 @@
-import fetch from 'isomorphic-unfetch';
-
 import { URLS, CREDENTIALS, HOMEPAGE_ACTIONS } from '../../../consts';
+import fetch from '../../../helpers/fetchData';
 
-export const searchData = (type, text) =>
-  dispatch =>
-    fetch(`${URLS.SEARCH}?type=${type}&q=${text}`, CREDENTIALS)
-      .then(response => response.json())
-      .then(data => dispatch({ type: HOMEPAGE_ACTIONS.SEARCH_DATA, data }));
+const getToken = () => 'BQAo_6zpvAijZqxy6QEGNF8wlrwvTyCY93DdoxcllmUNdFmQ-CdQaGv-cR3rjbXflv7uM_-ELZDwyJxrcIg';
 
-export const getDetails = url =>
-  dispatch =>
-    fetch(url, CREDENTIALS)
-      .then(response => response.json())
-      .then(details => dispatch({ type: HOMEPAGE_ACTIONS.SEARCH_DETAILS, details }));
+export const searchData =
+  (type, text) =>
+    dispatch =>
+      fetch(
+        `${URLS.SEARCH}?type=${type}&q=${text}`,
+        HOMEPAGE_ACTIONS.SEARCH_DATA,
+        'data',
+        dispatch,
+        CREDENTIALS(getToken()),
+      );
+
+export const getDetails =
+  url =>
+    dispatch =>
+      fetch(
+        url,
+        HOMEPAGE_ACTIONS.SEARCH_DETAILS,
+        'details',
+        dispatch,
+        CREDENTIALS(getToken()),
+      );
 
 export const changeType = searchType =>
   ({ type: HOMEPAGE_ACTIONS.SEARCH_TYPE, searchType });
