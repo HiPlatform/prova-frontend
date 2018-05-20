@@ -1,17 +1,14 @@
-import { URLS, CREDENTIALS, HOMEPAGE_ACTIONS } from '../../../consts';
+import { URLS, HOMEPAGE_ACTIONS } from '../../../consts';
 import fetch from '../../../helpers/fetchData';
-
-const getToken = () => 'BQAo_6zpvAijZqxy6QEGNF8wlrwvTyCY93DdoxcllmUNdFmQ-CdQaGv-cR3rjbXflv7uM_-ELZDwyJxrcIg';
 
 export const searchData =
   (type, text) =>
     dispatch =>
       fetch(
-        `${URLS.SEARCH}?type=${type}&q=${text}`,
+        `${URLS.SEARCH}/${type}/${text}`,
         HOMEPAGE_ACTIONS.SEARCH_DATA,
         'data',
         dispatch,
-        CREDENTIALS(getToken()),
       );
 
 export const getDetails =
@@ -22,7 +19,6 @@ export const getDetails =
         HOMEPAGE_ACTIONS.SEARCH_DETAILS,
         'details',
         dispatch,
-        CREDENTIALS(getToken()),
       );
 
 export const changeType = searchType =>
