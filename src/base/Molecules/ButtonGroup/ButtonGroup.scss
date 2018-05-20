@@ -1,3 +1,5 @@
+@import "../../../variables";
+
 .buttonGroup {
   display: flex;
 
@@ -9,8 +11,8 @@
     cursor: pointer;
     color: #444;
     border: 0;
-    border: 1px solid #ddd;
-    background-color: #fff;
+    border: 1px solid $borderColor;
+    background-color: $color;
     position: relative;
     padding: 0px;
     flex-grow: 1;
@@ -19,8 +21,8 @@
 
     &.active {
       color: #fff;
-      border-color: #69A70B;
-      background-color: #69A70B;
+      border-color: $secondaryColor;
+      background-color: $secondaryColor;
     }
 
     &:first-child {

@@ -1,11 +1,14 @@
+@import "../../../variables";
+
 .trackCard {
   display: flex;
   flex-direction: row;
   margin: 6px 4px;
   align-items: stretch;
-  border: 1px solid #d9dadb;
+  background-color: $cleanBackground;
+  border-right: 1px solid $borderColor;
   border-radius: 5px;
-  box-shadow: 0px 1px 0px 0px #d9dadb;
+  box-shadow: $shadow;
   flex-grow: 1;
   width: 100%;
 
