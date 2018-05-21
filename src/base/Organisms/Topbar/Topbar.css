@@ -13,7 +13,7 @@
   z-index: 1;
   align-items: center;
   justify-content: center; }
-  .topbar__back {
+  .topbar__back, .topbar button {
     font-size: 14px;
     color: #fff;
     text-shadow: #eff0f1;

@@ -1,0 +1,463 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistCard should render without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArtistCard
+    details={[Function]}
+    genres={
+        Array [
+            "foo",
+            "bar",
+            "fuzz",
+          ]
+    }
+    href="https://some.redirect/url"
+    images={
+        Array [
+            Object {
+              "url": "https://some.image/url",
+            },
+          ]
+    }
+    name="John Due"
+    popularity={90}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Image
+          alt="album"
+          url="https://some.image/url"
+/>,
+        <div
+          className="artistCard__info"
+>
+          <div
+                    className="artistCard__info__title"
+          >
+                    <AttributeField
+                              label={null}
+                              text="John Due"
+                    />
+          </div>
+          <div
+                    className="artistCard__info__extra"
+          >
+                    <AttributeField
+                              label="Genres"
+                              text="foo, bar, fuzz"
+                    />
+                    <AttributeField
+                              label="Popularity"
+                              text="Hot"
+                    />
+          </div>
+          <div
+                    className="artistCard__info__actions"
+          >
+                    <Button
+                              modifier=""
+                              onClick={[Function]}
+                    >
+                              MORE DETAILS
+                    </Button>
+          </div>
+</div>,
+      ],
+      "className": "artistCard",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "alt": "album",
+          "url": "https://some.image/url",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="artistCard__info__title"
+>
+              <AttributeField
+                            label={null}
+                            text="John Due"
+              />
+</div>,
+            <div
+              className="artistCard__info__extra"
+>
+              <AttributeField
+                            label="Genres"
+                            text="foo, bar, fuzz"
+              />
+              <AttributeField
+                            label="Popularity"
+                            text="Hot"
+              />
+</div>,
+            <div
+              className="artistCard__info__actions"
+>
+              <Button
+                            modifier=""
+                            onClick={[Function]}
+              >
+                            MORE DETAILS
+              </Button>
+</div>,
+          ],
+          "className": "artistCard__info",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <AttributeField
+                label={null}
+                text="John Due"
+/>,
+              "className": "artistCard__info__title",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "label": null,
+                "text": "John Due",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <AttributeField
+                  label="Genres"
+                  text="foo, bar, fuzz"
+/>,
+                <AttributeField
+                  label="Popularity"
+                  text="Hot"
+/>,
+              ],
+              "className": "artistCard__info__extra",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Genres",
+                  "text": "foo, bar, fuzz",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Popularity",
+                  "text": "Hot",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Button
+                modifier=""
+                onClick={[Function]}
+>
+                MORE DETAILS
+</Button>,
+              "className": "artistCard__info__actions",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "MORE DETAILS",
+                "modifier": "",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "MORE DETAILS",
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Image
+            alt="album"
+            url="https://some.image/url"
+/>,
+          <div
+            className="artistCard__info"
+>
+            <div
+                        className="artistCard__info__title"
+            >
+                        <AttributeField
+                                    label={null}
+                                    text="John Due"
+                        />
+            </div>
+            <div
+                        className="artistCard__info__extra"
+            >
+                        <AttributeField
+                                    label="Genres"
+                                    text="foo, bar, fuzz"
+                        />
+                        <AttributeField
+                                    label="Popularity"
+                                    text="Hot"
+                        />
+            </div>
+            <div
+                        className="artistCard__info__actions"
+            >
+                        <Button
+                                    modifier=""
+                                    onClick={[Function]}
+                        >
+                                    MORE DETAILS
+                        </Button>
+            </div>
+</div>,
+        ],
+        "className": "artistCard",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "alt": "album",
+            "url": "https://some.image/url",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="artistCard__info__title"
+>
+                <AttributeField
+                                label={null}
+                                text="John Due"
+                />
+</div>,
+              <div
+                className="artistCard__info__extra"
+>
+                <AttributeField
+                                label="Genres"
+                                text="foo, bar, fuzz"
+                />
+                <AttributeField
+                                label="Popularity"
+                                text="Hot"
+                />
+</div>,
+              <div
+                className="artistCard__info__actions"
+>
+                <Button
+                                modifier=""
+                                onClick={[Function]}
+                >
+                                MORE DETAILS
+                </Button>
+</div>,
+            ],
+            "className": "artistCard__info",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <AttributeField
+                  label={null}
+                  text="John Due"
+/>,
+                "className": "artistCard__info__title",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "label": null,
+                  "text": "John Due",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <AttributeField
+                    label="Genres"
+                    text="foo, bar, fuzz"
+/>,
+                  <AttributeField
+                    label="Popularity"
+                    text="Hot"
+/>,
+                ],
+                "className": "artistCard__info__extra",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Genres",
+                    "text": "foo, bar, fuzz",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Popularity",
+                    "text": "Hot",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Button
+                  modifier=""
+                  onClick={[Function]}
+>
+                  MORE DETAILS
+</Button>,
+                "className": "artistCard__info__actions",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "MORE DETAILS",
+                  "modifier": "",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "MORE DETAILS",
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;

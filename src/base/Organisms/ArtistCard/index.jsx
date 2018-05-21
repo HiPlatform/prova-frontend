@@ -1,28 +1,13 @@
-/* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cond, gte, partialRight, pathOr, T } from 'ramda';
+
+import { checkPopularity, imageUrl } from '../../../helpers/cardsFunctions';
 
 import Button from '../../Atoms/Button';
 import Image from '../../Atoms/Image';
 import AttributeField from '../../Molecules/AttributeField';
 
 import './ArtistCard.css';
-
-const conditionRange = parameters =>
-  cond(parameters.map(parameter => [
-    parameter.value === 'D' ? T : partialRight(gte, [parameter.value]),
-    () => parameter.label,
-  ]));
-
-const popularityRanges = [
-  { value: 80, label: 'Hot' },
-  { value: 60, label: 'Cool' },
-  { value: 30, label: 'Regular' },
-  { value: 'D', label: 'Underground' },
-];
-
-const checkPopularity = conditionRange(popularityRanges);
 
 const ArtistCard = ({
   name,
@@ -33,7 +18,7 @@ const ArtistCard = ({
   details,
 }) => (
   <div className="artistCard">
-    <Image url={pathOr('http://via.placeholder.com/200x100', ['0', 'url'], images)} alt="album" />
+    <Image url={imageUrl(images)} alt="album" />
     <div className="artistCard__info">
       <div className="artistCard__info__title">
         <AttributeField text={name} />

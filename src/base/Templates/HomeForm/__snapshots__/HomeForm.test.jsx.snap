@@ -1,0 +1,302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeForm should render without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HomeForm
+    fnInput={[Function]}
+    fnSearch={[Function]}
+    fnType={[Function]}
+    searchType=""
+    value=""
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="logo"
+>
+          Music Tracker
+</h1>,
+        <div
+          className="homeForm"
+>
+          <ButtonGroup
+                    active=""
+                    change={[Function]}
+                    types={
+                              Array [
+                                        "artist",
+                                        "album",
+                                        "track",
+                                      ]
+                    }
+          />
+          <Input
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+          />
+          <Button
+                    modifier="solid"
+                    onClick={[Function]}
+          >
+                    SEARCH
+          </Button>
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Music Tracker",
+          "className": "logo",
+        },
+        "ref": null,
+        "rendered": "Music Tracker",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <ButtonGroup
+              active=""
+              change={[Function]}
+              types={
+                            Array [
+                                          "artist",
+                                          "album",
+                                          "track",
+                                        ]
+              }
+/>,
+            <Input
+              onChange={[Function]}
+              type="text"
+              value=""
+/>,
+            <Button
+              modifier="solid"
+              onClick={[Function]}
+>
+              SEARCH
+</Button>,
+          ],
+          "className": "homeForm",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "active": "",
+              "change": [Function],
+              "types": Array [
+                "artist",
+                "album",
+                "track",
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "onChange": [Function],
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "SEARCH",
+              "modifier": "solid",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "SEARCH",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="logo"
+>
+            Music Tracker
+</h1>,
+          <div
+            className="homeForm"
+>
+            <ButtonGroup
+                        active=""
+                        change={[Function]}
+                        types={
+                                    Array [
+                                                "artist",
+                                                "album",
+                                                "track",
+                                              ]
+                        }
+            />
+            <Input
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+            />
+            <Button
+                        modifier="solid"
+                        onClick={[Function]}
+            >
+                        SEARCH
+            </Button>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Music Tracker",
+            "className": "logo",
+          },
+          "ref": null,
+          "rendered": "Music Tracker",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <ButtonGroup
+                active=""
+                change={[Function]}
+                types={
+                                Array [
+                                                "artist",
+                                                "album",
+                                                "track",
+                                              ]
+                }
+/>,
+              <Input
+                onChange={[Function]}
+                type="text"
+                value=""
+/>,
+              <Button
+                modifier="solid"
+                onClick={[Function]}
+>
+                SEARCH
+</Button>,
+            ],
+            "className": "homeForm",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "active": "",
+                "change": [Function],
+                "types": Array [
+                  "artist",
+                  "album",
+                  "track",
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "onChange": [Function],
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "SEARCH",
+                "modifier": "solid",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "SEARCH",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;

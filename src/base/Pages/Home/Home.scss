@@ -1,14 +1,5 @@
 @import "../../../variables";
 
-body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  background-color: $backgroundColor;
-  color: $color;
-}
-
 .homePage {
   width: 90%;
   max-width: 960px;

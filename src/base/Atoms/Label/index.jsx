@@ -7,12 +7,8 @@ const Label = ({ text }) => (
   <span>{text}</span>
 );
 
-Label.defaultProps = {
-  text: '',
-};
-
 Label.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
 };
 
 export default Label;

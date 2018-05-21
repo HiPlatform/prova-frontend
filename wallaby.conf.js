@@ -23,6 +23,7 @@ module.exports = (wallaby) => {
 
     filesWithNoCoverageCalculated: [
       'src/setupTests.js',
+      'src/store.js',
     ],
 
     env: {

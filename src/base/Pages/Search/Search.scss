@@ -1,0 +1,8 @@
+.searchPage {
+  &__content {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+    overflowX: hidden;
+  }
+}

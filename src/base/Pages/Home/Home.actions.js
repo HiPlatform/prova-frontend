@@ -11,21 +11,8 @@ export const searchData =
         dispatch,
       );
 
-export const getDetails =
-  url =>
-    dispatch =>
-      fetch(
-        url,
-        HOMEPAGE_ACTIONS.SEARCH_DETAILS,
-        'details',
-        dispatch,
-      );
-
 export const changeType = searchType =>
   ({ type: HOMEPAGE_ACTIONS.SEARCH_TYPE, searchType });
 
 export const changeInput = ({ target: { value } }) =>
   ({ type: HOMEPAGE_ACTIONS.SEARCH_CHANGE, value });
-
-export const changePage = page =>
-  ({ type: HOMEPAGE_ACTIONS.NAVIGATE, page });

@@ -1,0 +1,417 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrackCard should render without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TrackCard
+    album={
+        Object {
+            "images": Array [
+              Object {
+                "url": "https://some.image/url",
+              },
+            ],
+            "name": "Some album",
+          }
+    }
+    artists={
+        Array [
+            Object {
+              "name": "Artist #1",
+            },
+            Object {
+              "name": "Artist #2",
+            },
+          ]
+    }
+    duration_ms={75000}
+    name="Some Track"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Image
+          alt="album"
+          url="https://some.image/url"
+/>,
+        <div
+          className="trackCard__info"
+>
+          <div
+                    className="trackCard__info__title"
+          >
+                    <AttributeField
+                              label={null}
+                              text="Some Track"
+                    />
+          </div>
+          <div
+                    className="trackCard__info__extra"
+          >
+                    <AttributeField
+                              label="Artists"
+                              text="Artist #1, Artist #2"
+                    />
+                    <AttributeField
+                              label="Album Name"
+                              text="Some album"
+                    />
+                    <AttributeField
+                              label="Duration"
+                              text="1:15"
+                    />
+          </div>
+</div>,
+      ],
+      "className": "trackCard",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "alt": "album",
+          "url": "https://some.image/url",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="trackCard__info__title"
+>
+              <AttributeField
+                            label={null}
+                            text="Some Track"
+              />
+</div>,
+            <div
+              className="trackCard__info__extra"
+>
+              <AttributeField
+                            label="Artists"
+                            text="Artist #1, Artist #2"
+              />
+              <AttributeField
+                            label="Album Name"
+                            text="Some album"
+              />
+              <AttributeField
+                            label="Duration"
+                            text="1:15"
+              />
+</div>,
+          ],
+          "className": "trackCard__info",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <AttributeField
+                label={null}
+                text="Some Track"
+/>,
+              "className": "trackCard__info__title",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "label": null,
+                "text": "Some Track",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <AttributeField
+                  label="Artists"
+                  text="Artist #1, Artist #2"
+/>,
+                <AttributeField
+                  label="Album Name"
+                  text="Some album"
+/>,
+                <AttributeField
+                  label="Duration"
+                  text="1:15"
+/>,
+              ],
+              "className": "trackCard__info__extra",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Artists",
+                  "text": "Artist #1, Artist #2",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Album Name",
+                  "text": "Some album",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Duration",
+                  "text": "1:15",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Image
+            alt="album"
+            url="https://some.image/url"
+/>,
+          <div
+            className="trackCard__info"
+>
+            <div
+                        className="trackCard__info__title"
+            >
+                        <AttributeField
+                                    label={null}
+                                    text="Some Track"
+                        />
+            </div>
+            <div
+                        className="trackCard__info__extra"
+            >
+                        <AttributeField
+                                    label="Artists"
+                                    text="Artist #1, Artist #2"
+                        />
+                        <AttributeField
+                                    label="Album Name"
+                                    text="Some album"
+                        />
+                        <AttributeField
+                                    label="Duration"
+                                    text="1:15"
+                        />
+            </div>
+</div>,
+        ],
+        "className": "trackCard",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "alt": "album",
+            "url": "https://some.image/url",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="trackCard__info__title"
+>
+                <AttributeField
+                                label={null}
+                                text="Some Track"
+                />
+</div>,
+              <div
+                className="trackCard__info__extra"
+>
+                <AttributeField
+                                label="Artists"
+                                text="Artist #1, Artist #2"
+                />
+                <AttributeField
+                                label="Album Name"
+                                text="Some album"
+                />
+                <AttributeField
+                                label="Duration"
+                                text="1:15"
+                />
+</div>,
+            ],
+            "className": "trackCard__info",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <AttributeField
+                  label={null}
+                  text="Some Track"
+/>,
+                "className": "trackCard__info__title",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "label": null,
+                  "text": "Some Track",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <AttributeField
+                    label="Artists"
+                    text="Artist #1, Artist #2"
+/>,
+                  <AttributeField
+                    label="Album Name"
+                    text="Some album"
+/>,
+                  <AttributeField
+                    label="Duration"
+                    text="1:15"
+/>,
+                ],
+                "className": "trackCard__info__extra",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Artists",
+                    "text": "Artist #1, Artist #2",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Album Name",
+                    "text": "Some album",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Duration",
+                    "text": "1:15",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;

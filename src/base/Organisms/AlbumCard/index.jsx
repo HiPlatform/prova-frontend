@@ -1,23 +1,14 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { pathOr } from 'ramda';
+
+import { checkArtists, checkAvailable, imageUrl } from '../../../helpers/cardsFunctions';
 
 import Button from '../../Atoms/Button';
 import Image from '../../Atoms/Image';
 import AttributeField from '../../Molecules/AttributeField';
 
 import './AlbumCard.css';
-
-const checkArtists = items =>
-  (items.length > 1
-    ? 'Various artists'
-    : pathOr('', ['0', 'name'], items));
-
-const checkAvailable = (country, markets) =>
-  (markets.indexOf(country) === -1
-    ? 'Unavailable in your country'
-    : 'Available in your country');
 
 const AlbumCard = ({
   name,
@@ -28,7 +19,7 @@ const AlbumCard = ({
   details,
 }) => (
   <div className="albumCard">
-    <Image url={pathOr('http://via.placeholder.com/200x100', ['0', 'url'], images)} alt="album" />
+    <Image url={imageUrl(images)} alt="album" />
     <div className="albumCard__info">
       <div className="albumCard__info__title">
         <AttributeField text={name} />
