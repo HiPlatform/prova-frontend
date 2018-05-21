@@ -1,30 +1,17 @@
 ---
-engines:
+version: "2"
+plugins:
   eslint:
     enabled: true
-    channel: "eslint-3"
     config:
-      extensions:
-        - .js
-        - .jsx
-    checks:
-      import/no-duplicates:
-        enabled: true
-      no-template-curly-in-string:
-        enabled: false
-      import/no-unresolved:
-        enabled: false
-      import/no-extraneous-dependencies:
-        enabled: false
-      import/no-named-as-default-member:
-        enabled: false
+      config: .eslintrc.yml
   stylelint:
     enabled: true
-ratings:
-  paths:
-  - "**.js"
-  - "**.jsx"
-  - "**.scss"
-  - "!**.test.js"
-exclude_paths:
-  - node_modules/**/*
+exclude_patterns:
+  - "node_modules/*"
+  - "**/*.test.js"
+  - "**/*.test.jsx"
+  - "src/registerServiceWorker.js"
+  - "src/index.js"
+  - "src/setupTests.js"
+  - "src/store.js"
