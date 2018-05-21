@@ -25,6 +25,7 @@ export const Search = ({
           key={item.id}
           type={searchType}
           details={fnDetails}
+          item={item}
           {...item}
         />
       ))}

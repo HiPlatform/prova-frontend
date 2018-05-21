@@ -7,6 +7,7 @@ import { checkArtists, checkAvailable, imageUrl } from '../../../helpers/cardsFu
 import Button from '../../Atoms/Button';
 import Image from '../../Atoms/Image';
 import AttributeField from '../../Molecules/AttributeField';
+import FavoriteButton from '../../Molecules/FavoriteButton';
 
 import './AlbumCard.css';
 
@@ -17,8 +18,10 @@ const AlbumCard = ({
   available_markets,
   href,
   details,
+  item,
 }) => (
   <div className="albumCard">
+    <FavoriteButton item={item} list="album" />
     <Image url={imageUrl(images)} alt="album" />
     <div className="albumCard__info">
       <div className="albumCard__info__title">
@@ -46,6 +49,7 @@ AlbumCard.propTypes = {
   available_markets: PropTypes.arrayOf(PropTypes.string).isRequired,
   href: PropTypes.string.isRequired,
   details: PropTypes.func.isRequired,
+  item: PropTypes.shape().isRequired,
 };
 
 export default AlbumCard;

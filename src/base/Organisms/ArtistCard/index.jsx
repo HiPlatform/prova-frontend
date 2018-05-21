@@ -8,6 +8,7 @@ import Image from '../../Atoms/Image';
 import AttributeField from '../../Molecules/AttributeField';
 
 import './ArtistCard.css';
+import FavoriteButton from '../../Molecules/FavoriteButton';
 
 const ArtistCard = ({
   name,
@@ -16,8 +17,10 @@ const ArtistCard = ({
   genres,
   href,
   details,
+  item,
 }) => (
   <div className="artistCard">
+    <FavoriteButton item={item} list="artist" />
     <Image url={imageUrl(images)} alt="album" />
     <div className="artistCard__info">
       <div className="artistCard__info__title">
@@ -43,6 +46,7 @@ ArtistCard.propTypes = {
   genres: PropTypes.arrayOf(PropTypes.string).isRequired,
   href: PropTypes.string.isRequired,
   details: PropTypes.func.isRequired,
+  item: PropTypes.shape().isRequired,
 };
 
 export default ArtistCard;

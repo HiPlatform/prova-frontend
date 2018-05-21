@@ -37,6 +37,10 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <Connect(Component)
+          item={undefined}
+          list="artist"
+/>,
         <Image
           alt="album"
           url="https://some.image/url"
@@ -80,6 +84,18 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "item": undefined,
+          "list": "artist",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -247,6 +263,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <Connect(Component)
+            item={undefined}
+            list="artist"
+/>,
           <Image
             alt="album"
             url="https://some.image/url"
@@ -290,6 +310,18 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "item": undefined,
+            "list": "artist",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,

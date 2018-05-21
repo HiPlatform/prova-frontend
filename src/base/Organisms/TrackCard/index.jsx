@@ -6,6 +6,7 @@ import { imageUrl, getArtistsName, getDuration } from '../../../helpers/cardsFun
 
 import Image from '../../Atoms/Image';
 import AttributeField from '../../Molecules/AttributeField';
+import FavoriteButton from '../../Molecules/FavoriteButton';
 
 import './TrackCard.css';
 
@@ -14,8 +15,10 @@ const TrackCard = ({
   artists,
   album,
   duration_ms,
+  item,
 }) => (
   <div className="trackCard">
+    <FavoriteButton item={item} list="album" />
     <Image url={imageUrl(album, ['images'])} alt="album" />
     <div className="trackCard__info">
       <div className="trackCard__info__title">
@@ -40,6 +43,7 @@ TrackCard.propTypes = {
     })),
   }).isRequired,
   duration_ms: PropTypes.number.isRequired,
+  item: PropTypes.shape().isRequired,
 };
 
 export default TrackCard;
