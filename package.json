@@ -47,5 +47,16 @@
   },
   "devDependencies": {
     "gh-pages": "^1.1.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.+(js|jsx)",
+      "!src/**/*.test.js?(x)",
+      "!src/setupTests.js",
+      "!src/index.js",
+      "!src/registerServiceWorker.js",
+      "!src/store.js",
+      "!src/rootReducer.js"
+    ]
   }
 }
