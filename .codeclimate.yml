@@ -25,7 +25,6 @@ ratings:
   - "**.js"
   - "**.jsx"
   - "**.scss"
+  - "!**.test.js"
 exclude_paths:
   - node_modules/**/*
-  - **.jsx
-  - **.snap
