@@ -19,7 +19,11 @@
     text-shadow: #eff0f1;
     padding: 0px 10px;
     background-color: transparent;
-    border: none; }
+    border: none;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none; }
   .topbar__title {
     font-size: 14px;
     padding-left: 10px;

@@ -23,6 +23,10 @@
     padding: 0px 10px;
     background-color: transparent;
     border: none;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
   }
 
   &__title {
