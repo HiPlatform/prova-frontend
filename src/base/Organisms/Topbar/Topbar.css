@@ -17,7 +17,9 @@
     font-size: 14px;
     color: #fff;
     text-shadow: #eff0f1;
-    padding: 0px 10px; }
+    padding: 0px 10px;
+    background-color: transparent;
+    border: none; }
   .topbar__title {
     font-size: 14px;
     padding-left: 10px;
