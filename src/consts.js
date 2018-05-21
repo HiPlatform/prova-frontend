@@ -1,5 +1,8 @@
+const BASE_URL = 'https://spotify-access.herokuapp.com';
+
 export const URLS = {
-  SEARCH: 'https://spotify-access.herokuapp.com/data',
+  SEARCH: `${BASE_URL}/data`,
+  DETAILS: `${BASE_URL}/details`,
 };
 
 export const HOMEPAGE_ACTIONS = {

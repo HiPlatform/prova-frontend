@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Label from '../../Atoms/Label';
 import Attribute from '../../Atoms/Attribute';
@@ -18,7 +19,7 @@ AttributeField.defaultProps = {
 };
 
 AttributeField.propTypes = {
-  label: Label.propTypes.text,
+  label: PropTypes.string,
   text: Attribute.propTypes.text,
 };
 

@@ -1,11 +1,11 @@
 import fetch from '../../../helpers/fetchData';
-import { SEARCH_ACTIONS } from '../../../consts';
+import { SEARCH_ACTIONS, URLS } from '../../../consts';
 
 const getDetails =
   url =>
     dispatch =>
       fetch(
-        url,
+        `${URLS.DETAILS}/${btoa(url)}`,
         SEARCH_ACTIONS.SEARCH_DETAILS,
         'details',
         dispatch,
