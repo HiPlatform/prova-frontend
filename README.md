@@ -1,56 +1,38 @@
-## Hi Platform Front-End Challenge
 
-#### What
+## Hi Platform Desafio de Frontend
 
-Everyone loves music. So we'd like you to create a web app based on Spotify's API to retrive data about **Artists**, **Albums** or **Tracks**.
+No nosso exercício de frontend, pedimos que você implemente o componente abaixo. 
+O componente é uma árvore simples, na qual cada item pode ter vários itens encadeados (itens filhos).
 
-Based on user search choice and input on a search bar, you **must** retrieve a list containing the following info:
-* If Artist search is selected:
-  * All arists matching the word searched, containing: Image, name, genres and popularity;
-* If Album search is selected:
-  * All albums matching the word searched, containing: Image, name, artist(s), and availability;
-* If Track search is selected:
-  * All tracks matching the word searched, containing: Album Image, track name, artist name³, album name and track duration;
+![tree.png](https://github.com/HiPlatform/prova-frontend/blob/master/tree.png?raw=true)
+![tree.gif]((https://github.com/HiPlatform/prova-frontend/blob/master/tree.gif?raw=true)
 
-##### Details:
-* Artists must display the **FIRST** image returned on search and **genres** separated by comma;
-* Artists popularity must be tagged within:
-  * Over 80: Hot;
-  * Between 60 and 79: Cool;
-  * Between 30 and 59: Regular;
-  * Under 30: Underground
-* If a retrieved Album happens to have many Artists, display "Various artists".;
-* If a Track happens to have many Artists, display their names separated by comma;
-* Artists and Albums must be clickable, showing upon click:
-  * Artists: Latest 5 albums;
-  * Albums: All of its tracks;
-* A user can favorite Artists, Albums and Tracks;
+Junto com este reposítorio há um arquivo `data.json` contendo os dados para renderizar a árvore. A estrutura do dado é esta:
 
+```
+ "1": {
+    "id": "a853dddc-b639-41e6-a876-958b1e7f65d1",
+    "name": "Harald Svante August",
+    "children": {}
+  }
+```
 
-#### Musts:
-Your code must follow these requirements:
-* Use React, Vue or Angular; (Consider that we are migrating our Front-End stack to use React)
-* Fully responsive;
-* ES6+;
-* Use a module bundler (Webpack, Parcel, Browserify, etc.);
-* Linted code;
-* CSS pre-processors or CSS-in-JS;
+##### [](https://github.com/HiPlatform/prova-frontend#behaviour)Comportamento:
+- Para cada item, o usuário deve poder marcar o checkbox dessa linha. 
+- Para cada item que tenha filhos (ou seja, um item pai), quando o usuário marcar ou desmarcar o checkbox, o estado deve ser cascateado a todos os seus descendentes. 
+- Para cada item que seja um item pai, o usuário deve ser capaz de mostrar ou esconder os itens internos.
 
-#### Nice to Have:
-* State management framework (Redux, Vuex, ngrx);
-* Automated tests;
-* Add authentication to your WebApp;
-* Turn it into a PWA;
-* Data Persistence (Cookies, DOMStorage, IndexedDB);
-* Micro animations/Micro transitions following Material Design Motion guidelines;
-* Host it somewhere as a Live Demo;
+##### [](https://github.com/HiPlatform/prova-frontend#freedom)Liberdade:
+- Você pode usar qualquer tecnologia que melhor lhe servir. 
+- Você é livre para estruturar o projeto da maneira que achar mais organizada. 
+- Você é livre para implementar o código em qualquer padrão que achar mais adequado. 
+- Você pode adicionar funcionalidades ao componente como desejar, mas não fuja da simplicidade.
 
-Browser Support: IE11+;
+##### [](https://github.com/HiPlatform/prova-frontend#nice-to-have)Nós valorizamos atenção para os seguintes pontos:
+- Acoplamento e concisão de código 
+- Testes 
+- Performance 
+- Recuperação de estado (por exemplo: recuperar estado dos checkboxes após um page refresh) 
+- Experiência do usuário (área de clique, scroll jump, etc.) 
 
-You **can** use UI libs as Bootstrap, Foundation, Material-UI, etc.
-
-Design it as something you'd use ;)
-
-[Spotify API reference](https://beta.developer.spotify.com/documentation/web-api/reference/search/search/) 
-
-Have fun!
+Divirta-se!
