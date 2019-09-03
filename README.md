@@ -5,7 +5,7 @@ No nosso exercício de frontend, pedimos que você implemente o componente abaix
 O componente é uma árvore simples, na qual cada item pode ter vários itens encadeados (itens filhos).
 
 ![tree.png](https://github.com/HiPlatform/prova-frontend/blob/master/tree.png?raw=true)
-![tree.gif]((https://github.com/HiPlatform/prova-frontend/blob/master/tree.gif?raw=true)
+![tree.gif](https://github.com/HiPlatform/prova-frontend/blob/master/tree.gif?raw=true)
 
 Junto com este reposítorio há um arquivo `data.json` contendo os dados para renderizar a árvore. A estrutura do dado é esta:
 
