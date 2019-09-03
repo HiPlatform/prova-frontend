@@ -31,7 +31,7 @@ Junto com este reposítorio há um arquivo `data.json` contendo os dados para re
 - Você pode adicionar funcionalidades ao componente como desejar, mas não fuja da simplicidade.
 
 ##### [](https://github.com/HiPlatform/prova-frontend#nice-to-have)Nós valorizamos atenção para os seguintes pontos:
-- Acoplamento e concisão de código 
+- Acoplamento e coesão
 - Testes 
 - Performance 
 - Recuperação de estado (por exemplo: recuperar estado dos checkboxes após um page refresh) 
