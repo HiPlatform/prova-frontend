@@ -4,7 +4,9 @@
 No nosso exercício de frontend, pedimos que você implemente o componente abaixo. 
 O componente é uma árvore simples, na qual cada item pode ter vários itens encadeados (itens filhos).
 
+### Screenshot:
 ![tree.png](https://github.com/HiPlatform/prova-frontend/blob/master/tree.png?raw=true)
+### Video:
 ![tree.gif](https://github.com/HiPlatform/prova-frontend/blob/master/tree.gif?raw=true)
 
 Junto com este reposítorio há um arquivo `data.json` contendo os dados para renderizar a árvore. A estrutura do dado é esta:
