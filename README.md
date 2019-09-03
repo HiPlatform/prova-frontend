@@ -29,7 +29,7 @@ Junto com este reposítorio há um arquivo `data.json` contendo os dados para re
 - Você pode usar qualquer tecnologia que melhor lhe servir. 
 - Você é livre para estruturar o projeto da maneira que achar mais organizada. 
 - Você é livre para implementar o código em qualquer padrão que achar mais adequado. 
-- Você pode adicionar funcionalidades ao componente como desejar, mas não se afaste da simplicidade.
+- Você pode adicionar funcionalidades ao componente como desejar, mas não fuja da simplicidade.
 
 ##### [](https://github.com/HiPlatform/prova-frontend#nice-to-have)Nós valorizamos atenção para os seguintes pontos:
 - Acoplamento e coesão
