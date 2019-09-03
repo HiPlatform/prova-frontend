@@ -9,7 +9,7 @@ O componente é uma árvore simples, na qual cada item pode ter vários itens en
 ### Video:
 ![tree.gif](https://github.com/HiPlatform/prova-frontend/blob/master/tree.gif?raw=true)
 
-Junto com este reposítorio há um arquivo `data.json` contendo os dados para renderizar a árvore. A estrutura do dado é esta:
+Junto com este reposítorio há um arquivo `data.json` contendo os dados para renderizar a árvore. A estrutura de um único item é esta:
 
 ```
  "1": {
