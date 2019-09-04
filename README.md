@@ -4,7 +4,7 @@
 No nosso exercício de frontend, pedimos que você implemente o componente abaixo. 
 O componente é uma árvore simples, na qual cada item pode ter vários itens encadeados (itens filhos).
 
-Veja abaixo como tal árvore deve ser renderizado:
+Veja abaixo como tal árvore deve ser renderizada:
 ### Vídeo:
 ![tree.gif](https://github.com/HiPlatform/prova-frontend/blob/master/tree.gif?raw=true)
 ### Screenshot:
