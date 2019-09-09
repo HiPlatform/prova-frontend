@@ -2,7 +2,7 @@
 ## Hi Platform Desafio de Frontend
 
 No nosso exercício de frontend, pedimos que você implemente o componente abaixo. 
-O componente é uma árvore simples, na qual cada item pode ter vários itens encadeados (itens filhos).
+O componente é uma simples árvore de itens, na qual cada item pode ter vários itens encadeados (itens filhos).
 
 Veja abaixo como tal árvore deve ser renderizada:
 ### Vídeo:
@@ -10,7 +10,7 @@ Veja abaixo como tal árvore deve ser renderizada:
 ### Screenshot:
 ![tree.png](https://github.com/HiPlatform/prova-frontend/blob/master/tree.png?raw=true)
 
-Junto com este reposítorio há um arquivo `data.json` contendo os dados para renderizar a árvore. A estrutura de um único item é esta:
+Junto com este repositório há um arquivo `data.json` contendo os dados para renderizar a árvore. A estrutura de um único item é esta:
 
 ```
  "1": {
