@@ -4,6 +4,11 @@ This is a React SPA with nested check list that you can drag'n'drop everywhere!
 
 Don't fear losing your list: it has data persistence even after refresh.
 
+## Installation
+
+`npm install`
+`npm start`
+
 ## Hi Platform Desafio de Frontend
 
 No nosso exercício de frontend, pedimos que você implemente o componente abaixo. 
