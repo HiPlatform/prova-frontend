@@ -1,3 +1,8 @@
+# Nested Check List
+
+This is a React SPA with nested check list that you can drag'n'drop everywhere!
+
+Don't fear losing your list: it has data persistence even after refresh.
 
 ## Hi Platform Desafio de Frontend
 
