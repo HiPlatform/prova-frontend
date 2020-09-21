@@ -1,0 +1,46 @@
+.tree-item-container {
+  width: 100%;
+
+  &.teste {
+    background-color: rgb(250, 248, 255);
+  }
+
+  .item-header {
+    position: relative;
+    padding: 18px 0px 18px 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      background: #eee;
+    }
+
+    & > div {
+      width: 100%;
+    }
+
+    span {
+      margin-left: 10px;
+    }
+
+    .icon {
+      margin-right: 20px;
+      color: black;
+      transition: transform 1s;
+
+      &.collapsed {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .item-body {
+    overflow: hidden;
+    transition: flex 0.3s ease-out;
+    height: auto;
+    flex: 0;
+    padding: 0px 0px 0px 20px;
+  }
+}

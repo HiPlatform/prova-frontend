@@ -1,41 +1,32 @@
+## HI PLATFORM TEST
 
-## Hi Platform Desafio de Frontend
+### Como executar o projeto
 
-No nosso exercício de frontend, pedimos que você implemente o componente abaixo. 
-O componente é uma simples árvore de itens, na qual cada item pode ter vários itens encadeados (itens filhos).
-
-Veja abaixo como tal árvore deve ser renderizada:
-### Vídeo:
-![tree.gif](https://github.com/HiPlatform/prova-frontend/blob/master/tree.gif?raw=true)
-### Screenshot:
-![tree.png](https://github.com/HiPlatform/prova-frontend/blob/master/tree.png?raw=true)
-
-Junto com este repositório há um arquivo `data.json` contendo os dados para renderizar a árvore. A estrutura de um único item é esta:
-
+1. Baixe as dependências do projeto 
 ```
- "1": {
-    "id": "a853dddc-b639-41e6-a876-958b1e7f65d1",
-    "name": "Harald Svante August",
-    "children": {}
-  }
+yarn ou npm -i
 ```
 
-##### [](https://github.com/HiPlatform/prova-frontend#behaviour)Comportamento:
-- Para cada item, o usuário deve poder marcar o checkbox dessa linha. 
-- Para cada item que tenha filhos (ou seja, um item pai), quando o usuário marcar ou desmarcar o checkbox, o estado deve ser cascateado a todos os seus descendentes. 
-- Para cada item que seja um item pai, o usuário deve ser capaz de mostrar ou esconder os itens internos.
+2. O projeto já pode ser iniciado na porta padrão 3000.
+```
+yarn start ou npm start
+```
 
-##### [](https://github.com/HiPlatform/prova-frontend#freedom)Liberdade:
-- Você pode usar qualquer tecnologia que melhor lhe servir. 
-- Você é livre para estruturar o projeto da maneira que achar mais organizada. 
-- Você é livre para implementar o código em qualquer padrão que achar mais adequado. 
-- Você pode adicionar funcionalidades ao componente como desejar, mas não fuja da simplicidade.
+Porém os dados não serão exibidos, pois precisamos iniciar a API. 
 
-##### [](https://github.com/HiPlatform/prova-frontend#nice-to-have)Nós valorizamos atenção para os seguintes pontos:
-- Acoplamento e coesão
-- Testes 
-- Performance 
-- Recuperação de estado (por exemplo: recuperar estado dos checkboxes após um page refresh) 
-- Experiência do usuário (área de clique, scroll jump, etc.) 
+### API
+Usaremos a lib [json-server](https://github.com/typicode/json-server). Ela irá simular uma API a partir de um arquivo _json_, o qual está localizado na raiz do projeto com o nome **'data.json'**
 
-Divirta-se!
+Para instalar usaremos:
+```
+yarn add json-server ou npm install -g json-server
+```
+
+Por padrão, o _json-server_ é executado na porta 3000. Para evitar conflito com o projeto mudamos a porta para 3333 através do arquivo _json-server.json_. 
+
+Para iniciar, abra o terminal e execute o comando:
+```
+yarn json-server data.json ou npm run json-server --watch data.json
+```
+
+A partir disso, basta dar um F5 na aba do projeto no navegador.
