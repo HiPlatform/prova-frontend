@@ -19,7 +19,6 @@ const TreeList = ({ data, checked }) => {
       <TreeItem 
         key={item.id}
         item={item} 
-        index={i} 
         children={children}
         isChecked={checked}
       />

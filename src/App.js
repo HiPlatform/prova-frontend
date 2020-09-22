@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <TreeList data={data} first />
+      <TreeList data={data} />
     </div>
   )
 }

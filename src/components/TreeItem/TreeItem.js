@@ -27,18 +27,18 @@ const TreeItem = ({
   }, [item])
 
   useEffect(() => {
-    if (isChecked) {
-      setChecked(isChecked)
-    } else {
-      const checkedIDs = JSON.parse(localStorage.getItem('check')) || []
+    setChecked(isChecked)
+  }, [isChecked]) 
+
+  useEffect(() => {
+    const checkedIDs = JSON.parse(localStorage.getItem('check')) || []
       checkedIDs.forEach(element => {
         if (element === item.id) {
           setChecked(true)
         }
       });
-    }
 
-  }, [isChecked, item])
+  }, [item])
 
   useEffect(() => {
     let expandeds = JSON.parse(localStorage.getItem('expanded')) || []
@@ -50,22 +50,26 @@ const TreeItem = ({
     }
   }, [collapsed, item])
 
-  useEffect(() => {
+  const toggleCollapse = () => setCollapsed((val) => !val)
+
+  const toggleChecked = () => {
+    const val = !checked
+    const childIDS = children.map((c) => c.id)
     let checks = JSON.parse(localStorage.getItem('check')) || []
-    if (checked) {
-      localStorage.setItem('check', JSON.stringify([...checks, item.id]))
+
+    if (val) {
+      localStorage.setItem('check', JSON.stringify([...checks, item.id, ...childIDS]))
     } else {
-      const items = checks.filter(id => id !== item.id)
+      const items = [checks, childIDS].filter(id => id !== item.id)
       localStorage.setItem('check', JSON.stringify(items))
     }
-  }, [checked, item])
 
-  const toggleCollapse = () => setCollapsed((val) => !val)
-  const toggleChecked = () => setChecked((val) => !val)
+    setChecked(val)
+  }
 
   return (
     <div 
-      className={`tree-item-container ${collapsed && 'teste'}`} 
+      className={`tree-item-container ${collapsed && 'expanded'}`} 
     >
       <div className="item-header">
         <div onClick={toggleChecked}>
