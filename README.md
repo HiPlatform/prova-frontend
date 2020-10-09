@@ -1,5 +1,3 @@
-## HI PLATFORM TEST
-
 ### Como executar o projeto
 
 1. Baixe as dependências do projeto 
