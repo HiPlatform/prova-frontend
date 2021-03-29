@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import List from "./List";
 import ListItem from "./ListItem";
 
 const TextStyles = css`
@@ -24,4 +25,20 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export { ListItem };
+export const Monospaced = styled.span`
+  font-family: monospace;
+  font-size: 12px;
+
+  * {
+    font-family: monospace;
+  }
+
+  ${TextStyles}
+`;
+
+export const Link = styled.a`
+  color: #0d9ad2;
+  text-decoration: none;
+`;
+
+export { List, ListItem };
