@@ -1,26 +1,26 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { Tree } from './index';
 
 const dataFake = [
   {
-    id: '001',
+    id: 'A1',
     name: 'Test 1',
     level: 0,
     childrens: [
       {
-        id: '012',
+        id: 'B1',
         name: 'Test 2.1',
-        level: 0,
+        level: 1,
         childrens: [],
       },
       {
-        id: '011',
+        id: 'B2',
         name: 'Test 2.2',
         level: 1,
         childrens: [
           {
-            id: '111',
+            id: 'C1',
             name: 'Test 3.1',
             level: 2,
             childrens: [],
@@ -30,7 +30,7 @@ const dataFake = [
     ],
   },
   {
-    id: '002',
+    id: 'A2',
     name: 'Test 2',
     level: 0,
     childrens: [],
@@ -40,17 +40,23 @@ const dataFake = [
 const values = {};
 
 describe('Test tree component', () => {
-  const { getAllByTestId } = render(
-    <Tree itens={dataFake} value={values} onChange={() => {}} />
-  );
+  it('should expand and contract the menu', () => {
+    render(<Tree itens={dataFake} value={values} onChange={() => {}} />);
 
-  it('Shoud must mount the component on the screen', () => {
-    expect(getAllByTestId('treeItem:0:001')).not.toBeNull();
+    expect(screen.getByTestId('treeItem:0:A1')).toBeInTheDocument();
+    expect(screen.getByTestId('treeItem:0:A2')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByTestId('treeItem:expand:0:A1'));
+    expect(screen.getByTestId('treeItem:1:B1')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByTestId('treeItem:expand:1:B2'));
+    expect(screen.getByTestId('treeItem:2:C1')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByTestId('treeItem:expand:0:A1'));
+    expect(screen.queryByTestId('treeItem:1:B1')).not.toBeInTheDocument();
   });
   // TODO
   // deve poder marcar pelo checkbox e pela descrição
-  // quando clicar no botao de expandir deve expandir a lista
-  // deve exibir os itens filhos
   // marcar o item filho, deve marcar o pai, e os descendentes
   // desmarcar o pai, deve desmarcar todos os filhos
 });

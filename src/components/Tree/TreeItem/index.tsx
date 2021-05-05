@@ -61,6 +61,7 @@ export const TreeItem: React.FC<TreeProps> = ({
           {open &&
             item.childrens.map((x) => (
               <TreeItem
+                key={x.id}
                 rootId={[...rootId, item.id]}
                 item={x}
                 value={value}
