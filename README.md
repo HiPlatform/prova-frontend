@@ -1,41 +1,70 @@
+# Getting Started with Create React App
 
-## Hi Platform Desafio de Frontend
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-No nosso exercício de frontend, pedimos que você implemente o componente abaixo. 
-O componente é uma simples árvore de itens, na qual cada item pode ter vários itens encadeados (itens filhos).
+## Available Scripts
 
-Veja abaixo como tal árvore deve ser renderizada:
-### Vídeo:
-![tree.gif](https://github.com/HiPlatform/prova-frontend/blob/master/tree.gif?raw=true)
-### Screenshot:
-![tree.png](https://github.com/HiPlatform/prova-frontend/blob/master/tree.png?raw=true)
+In the project directory, you can run:
 
-Junto com este repositório há um arquivo `data.json` contendo os dados para renderizar a árvore. A estrutura de um único item é esta:
+### `yarn start`
 
-```
- "1": {
-    "id": "a853dddc-b639-41e6-a876-958b1e7f65d1",
-    "name": "Harald Svante August",
-    "children": {}
-  }
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-##### [](https://github.com/HiPlatform/prova-frontend#behaviour)Comportamento:
-- Para cada item, o usuário deve poder marcar o checkbox dessa linha. 
-- Para cada item que tenha filhos (ou seja, um item pai), quando o usuário marcar ou desmarcar o checkbox, o estado deve ser cascateado a todos os seus descendentes. 
-- Para cada item que seja um item pai, o usuário deve ser capaz de mostrar ou esconder os itens internos.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-##### [](https://github.com/HiPlatform/prova-frontend#freedom)Liberdade:
-- Você pode usar qualquer tecnologia que melhor lhe servir. 
-- Você é livre para estruturar o projeto da maneira que achar mais organizada. 
-- Você é livre para implementar o código em qualquer padrão que achar mais adequado. 
-- Você pode adicionar funcionalidades ao componente como desejar, mas não fuja da simplicidade.
+### `yarn test`
 
-##### [](https://github.com/HiPlatform/prova-frontend#nice-to-have)Nós valorizamos atenção para os seguintes pontos:
-- Acoplamento e coesão
-- Testes 
-- Performance 
-- Recuperação de estado (por exemplo: recuperar estado dos checkboxes após um page refresh) 
-- Experiência do usuário (área de clique, scroll jump, etc.) 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Divirta-se!
+### `yarn build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
