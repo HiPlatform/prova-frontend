@@ -1,0 +1,20 @@
+body{
+  background-color: rgb(245, 245, 245);
+}
+
+.treenode__title:hover{
+  background-color: rgb(236, 238, 238);
+}
+
+.treenode__title:hover > span > svg > path{
+  stroke:#007bff !important;
+}
+
+.App{
+  max-width:800px;
+}
+
+.events-none{
+    pointer-events: none;
+    user-select: none;
+}
