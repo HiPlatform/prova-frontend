@@ -6,9 +6,7 @@ O componente é uma simples árvore de itens, na qual cada item pode ter vários
 
 Veja abaixo como tal árvore deve ser renderizada:
 ### Vídeo:
-![tree.gif](https://github.com/HiPlatform/prova-frontend/blob/master/tree.gif?raw=true)
-### Screenshot:
-![tree.png](https://github.com/HiPlatform/prova-frontend/blob/master/tree.png?raw=true)
+![tree](https://user-images.githubusercontent.com/13091635/129045214-81f3f1c8-8c56-4b32-8200-7734a413da98.gif)
 
 Junto com este repositório há um arquivo `data.json` contendo os dados para renderizar a árvore. A estrutura de um único item é esta:
 
@@ -23,6 +21,7 @@ Junto com este repositório há um arquivo `data.json` contendo os dados para re
 ##### [](https://github.com/HiPlatform/prova-frontend#behaviour)Comportamento:
 - Para cada item, o usuário deve poder marcar o checkbox dessa linha. 
 - Para cada item que tenha filhos (ou seja, um item pai), quando o usuário marcar ou desmarcar o checkbox, o estado deve ser cascateado a todos os seus descendentes. 
+- Para cada item que tenha filhos (ou seja, um item pai), quando o usuário marcar apenas algum(ns) filho(s), o estado do checkbox pai deve ser alterado para `indeterminate`
 - Para cada item que seja um item pai, o usuário deve ser capaz de mostrar ou esconder os itens internos.
 
 ##### [](https://github.com/HiPlatform/prova-frontend#freedom)Liberdade:
