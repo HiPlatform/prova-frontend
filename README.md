@@ -37,4 +37,6 @@ Junto com este repositório há um arquivo `data.json` contendo os dados para re
 - Recuperação de estado (por exemplo: recuperar estado dos checkboxes após um page refresh) 
 - Experiência do usuário (área de clique, scroll jump, etc.) 
 
+**Dica de amigo**: Entendemos que no dia-a-dia podemos usar implementações prontas para os problemas que aparecem, porém, queremos avaliar sua tomada de decisão, raciocínio lógico e resolução de problemas. O _core_ deste teste é a árvore de elementos e os estados do checkbox, portanto, pedimos que não use componentes prontos que implementem essas funcionalidades.
+
 Divirta-se!
