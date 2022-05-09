@@ -18,15 +18,15 @@ Junto com este repositório há um arquivo `data.json` contendo os dados para re
 ```
 
 #### [](https://github.com/HiPlatform/prova-frontend#behaviour)Comportamento:
-- Cada item deve ter um checkbox que pode ser marcado/ desmarcado.
-- Quando o usuário marcar ou desmarcar o checkbox de um item que tenha filhos, o estado deve ser cascateado a todos os seus descendentes. 
+- Cada item deve ter um checkbox que pode ser marcado/desmarcado.
+- Quando o usuário marcar/desmarcar o checkbox de um item que tenha filhos, o estado deve ser cascateado a todos os seus descendentes. 
 - Quando o usuário marcar um ou mais filhos, e até que marque todos, o estado do checkbox pai deve ser alterado para `indeterminate`.
-- Quando o usuário marcar/ desmarcar todos os filhos, o estado do checkbox pai deve replicar o dos filhos.
+- Quando o usuário marcar/desmarcar todos os filhos, o estado do checkbox pai deve replicar o dos filhos.
 - O usuário deve ser capaz de mostrar e esconder os itens internos de um item pai.
 
 #### [](https://github.com/HiPlatform/prova-frontend#freedom)Liberdade:
 - Você pode usar qualquer tecnologia que melhor lhe servir. 
-  > Na Hi usamos majoritariamente React. Isso não significa que vamos priorizar testes em React em detrimento de outros frameworks/ vanilla, mas se estiver na dúvida de qual escolher, sugerimos React 🙂 
+  > Na Hi usamos majoritariamente React. Isso não significa que vamos priorizar testes em React em detrimento de outros frameworks/vanilla, mas se estiver na dúvida de qual escolher, sugerimos React 🙂 
 - Você é livre para estruturar o projeto da maneira que achar mais organizada. 
 - Você é livre para implementar o código em qualquer padrão que achar mais adequado. 
 - Você pode adicionar funcionalidades ao componente como desejar, mas não fuja da simplicidade.
@@ -43,7 +43,7 @@ Entendemos que no dia-a-dia podemos usar implementações prontas para os proble
 
 Atente-se aos requisitos funcionais (comportamento) e aos diferenciais que serão valorizados.
 
-Nem sempre a gente consegue fazer tudo no prazo combinado, se você precisar de mais tempo converse a pessoa responsável pela vaga e evite entregar o teste inacabado!
+Nem sempre a gente consegue fazer tudo no prazo combinado, se você precisar de mais tempo converse com a pessoa responsável pela vaga e evite entregar o teste inacabado!
 
 ## Divirta-se!
 
